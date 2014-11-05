@@ -125,6 +125,7 @@ class Recurly_Client
       'Accept-Language: ' . $this->_acceptLanguage
     ));
     curl_setopt($ch, CURLOPT_USERPWD, $this->apiKey());
+    curl_setopt($ch, CURLOPT_VERBOSE, TRUE);
 
     if ('POST' == $method)
     {

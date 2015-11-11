@@ -16,7 +16,7 @@ class Recurly_Account extends Recurly_Resource
   {
     Recurly_Account::$_writeableAttributes = array(
       'account_code','username','first_name','last_name','vat_number',
-      'email','company_name','accept_language','billing_info','address','tax_exempt', 'entity_use_code'
+      'email','cc_emails','company_name','accept_language','billing_info','address','tax_exempt', 'entity_use_code'
     );
     Recurly_Account::$_requiredAttributes = array(
       'account_code'
